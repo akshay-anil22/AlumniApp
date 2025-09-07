@@ -1,50 +1,57 @@
-# Welcome to your Expo app 👋
+📖 Alumni Directory App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple Alumni List App built with React Native + Expo.
+The app works like a phone directory, displaying alumni details such as name, batch year & branch, and current company/role.
 
-## Get started
+✨ Features
 
-1. Install dependencies
+📋 Display a list of alumni (10 dummy entries hardcoded)
+🔍 Search bar to filter alumni by name
+🖼️ Reusable AlumniCard component
+🎨 Clean UI styled with NativeWind (Tailwind CSS for React Native)
+📱 Future Enhancement: Individual profile pages with alumni details (photo, LinkedIn, etc.)
 
-   ```bash
-   npm install
-   ```
+alumni-app/
+│
+├── app/
+│   ├── index.tsx          # Main screen (list + search bar)
+│   ├── profile/[id].tsx   # Profile page (future enhancement)
+│   └── _layout.tsx        # Stack navigation layout
+│
+├── components/
+│   ├── AlumniCard.tsx     # Reusable alumni card UI
+│   └── SearchBar.tsx      # Search input component
+│
+├── data/
+│   └── alumniData.ts      # Alumni dummy data (10 entries)
+│
+├── assets/                # Images/icons
+│
+├── App.tsx                # Expo entry point
+└── README.md              # Project documentation
 
-2. Start the app
+🚀 Getting Started
+1. Clone the repo
+git clone https://github.com/<your-username>/alumni-app.git
+cd alumni-app
 
-   ```bash
-   npx expo start
-   ```
+2. Install dependencies
+npm install
 
-In the output, you'll find options to open the app in a
+3. Run the project
+Start the Expo development server:
+npx expo start
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+📌 Screenshots
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+![app1](https://github.com/user-attachments/assets/e660a51e-ab44-4435-97f2-9ee6697ebb72)
 
-## Get a fresh project
+![app2](https://github.com/user-attachments/assets/e3cfc7cb-72be-493c-b822-dd59bd061e29)
 
-When you're ready, run:
+🔮 Future Enhancements
 
-```bash
-npm run reset-project
-```
+Alumni profile screen with image and contact details
+Linking LinkedIn profiles
+Backend integration (Node.js / Express + MongoDB or Firebase)
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
